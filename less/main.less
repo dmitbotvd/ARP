@@ -104,6 +104,7 @@ html, body {
 }
 .bg-registration {
   background-image: url('/img/bg-registration.png');
+  background-size: border-box;
   //height: 630px; //?
   &__inner {
     position: relative;
@@ -229,6 +230,9 @@ html, body {
 }
 .last-photo {
   margin-top: 55px;
+  .section-text-inner {
+    padding-bottom: 20px;
+  }
   &__button {
     text-align: center;
     button {
@@ -252,7 +256,7 @@ html, body {
     z-index: -1;
   }
   &__inner {
-    margin-top: 35px;
+    padding: 35px 0 75px;
     display: flex;
     justify-content: space-between;
   }
@@ -286,7 +290,7 @@ html, body {
         background-color: @ct-nb;
         height: 1px;
         transform: translate(-50%,-50%);
-        top: 50px; left: 50%;
+        top: 60px; left: 50%;
       }
     }
   }
@@ -320,9 +324,10 @@ html, body {
   }
 }
 .tariffs {
-  background-image: url('/img/bg-registration.png');
+  background-image: url('/img/bg-tariff.png');
+  background-size: border-box;
   &__inner {
-    margin: 0 auto;
+    padding: 48px 68px;
   }
   &__block {
     max-width: 1010px;
@@ -330,10 +335,65 @@ html, body {
     backdrop-filter: blur(8px);
     border: 1px solid @green;
     background: rgba(255, 255, 255, 0.94);
+    margin: 0 auto;
+    padding-top: 28px;
   }
   &__flex {
     display: flex;
     justify-content: space-between;
     padding: 0 34px;
+  }
+  &__left {
+    max-width: 370px;
+    width: 100%;
+  }
+  &__input {
+    input {
+      padding: 12px 0 12px 23px;
+      max-width: 347px;
+      width: 100%;
+      color: @ct-nb;
+      border: 1px solid @ct-nb;
+      border-radius: 5px;
+    }
+    h4 {
+      font-size: @16 + 2;
+      color: @ct-nb;
+      margin: 14px 0 8px;
+    }
+  }
+  &__checkbox {
+    padding-bottom: 30px;
+    h4 {
+      font-size: @16 + 2;
+      color: @ct-nb;
+      margin: 14px 0 10px;
+    }
+  }
+  &__right {
+    max-width: 400px;
+    width: 100%;
+    color: @ct-nb;
+    .price {
+      color: @ct-nb;
+      font-size: @16 + 2;
+    }
+  }
+  &__info {
+    display: flex;
+    padding-top: 28px;
+    padding-bottom: 15px;
+    p {  
+      padding-left: 22px;
+      margin: 0;
+      a {
+        color: @green;
+        text-decoration: none;
+      }
+    }
+    img {
+      width: 31px;
+      height: 31px;
+    }
   }
 }
