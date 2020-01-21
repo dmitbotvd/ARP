@@ -1,0 +1,165 @@
+@white: #fff;
+@green: #86BC42;
+@navy-blue: #4B5464;
+@ct-nb: #6E788D;
+@font-family: 'Open Sans', sans-serif;
+@font-family-m: 'Muli', sans-serif;
+@16: 16px;
+html, body {
+  font-family: @font-family;
+  font-size: @16;
+}
+.container {
+  max-width: 1147px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  .header-top {
+    background-color: @navy-blue;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__left {
+      width: 355px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__tel {
+      a {
+        color: @white;
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: @16 - 2;
+      }
+    }
+    &__email {
+      a {
+        color: @white;
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: @16 - 2;
+      }
+    }
+    &__logo {
+      width: 255px;
+      a {
+        color: @white;
+        font-size: @16 + 4;
+        text-decoration: none;
+        font-weight: 700;
+        span {
+          color: @green;
+        }
+      }
+    }
+    &__right {
+      width: 291px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__login {
+      a {
+        display: flex;
+        align-items: center;
+        color: @white;
+        text-decoration: none;
+        font-size: @16 - 2;
+        img {
+          padding-right: 15px;
+        }
+      }
+    }
+    &__registration {
+      background-color: @green;
+      padding: 15px 26px 15px 27px;
+      a {
+        color: @white;
+        text-decoration: none;
+      }
+    }
+  }
+  .header-menu {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1057px;
+      width: 100%;
+      margin: 0 auto;
+      a {
+        padding: 8px 0 6px 0;
+        text-decoration: none;
+        color: @ct-nb;  
+      }
+      .action-link {
+        color: @green;
+      }
+    }
+  }
+}
+.bg-registration {
+  background-image: url('/img/bg-registration.png');
+  height: 630px; //?
+  &__inner {
+    position: relative;
+    
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 840px;
+    width: 100%;
+    background: rgba(47, 45, 55, 0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+  &__h1 {
+    text-align: center;
+    h1 {
+      color: @white;
+      font-size: @16 + 8;
+      font-weight: normal;
+      font-family: @font-family-m;
+      margin: 0;
+      span {
+        font-size: @16 * 2 + 2;
+      }
+    }
+  }
+  &__form {
+    background-color: @white;
+    border-radius: 50px;
+  }
+  &__fill {
+    display: flex;
+    width: 570px;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__name {
+    input {
+      border-radius: 50px;
+    }
+  }
+  &__tel {
+    input {
+      border-radius: 50px;
+    }
+  }
+  &__button {
+    button {
+      border-radius: 50px;
+      background-color: @green;
+      color: @white;
+    }
+  }
+  &__advantages {
+    display: flex;
+  }
+}
