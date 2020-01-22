@@ -5,5 +5,7 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 3
   });
-  $('.single-item').slick();
+  $('.single-item').slick({
+    dots: true
+  });
 });
