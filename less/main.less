@@ -967,7 +967,7 @@ html, body {
     }
   }
 }
-@media (min-width: 370px) and (max-width: 768px) {
+@media (min-width: 370px) and (max-width: 765px) {
   .header {
     .header-top {
       &__inner {
@@ -1176,6 +1176,115 @@ html, body {
   .tariffs {
     &__inner {
       padding: 33px 15px;
+    }
+    &__flex {
+      flex-wrap: wrap;
+    }
+    &__input {
+      h4 {
+        font-size: @16 - 4;
+      }
+      input {
+        width: 260px;
+      }
+    }
+    &__checkbox {
+      h4 {
+        font-size: @16 - 4;
+      }
+    }
+    &__right {
+      p {
+        font-size: @16 - 4;
+      }
+      .price {
+        font-size: @16 - 4;
+      }
+    }
+  }
+  .last-news {
+    &__flex {
+      flex-wrap: wrap;
+    }
+    &__left {
+      h3 {
+        font-size: @16 - 2;
+        padding-left: 30px;
+        padding-bottom: 0;
+      }
+    }
+    &__adaptive {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      img {
+        max-width: 345px;
+        margin: 0 auto;
+      text-align: center;
+      }
+    }
+    &__text {
+      max-width: 345px;
+      margin: 0 auto;
+      padding-left: 0;
+      a {
+        text-align: end;
+        padding-right: 43px;
+        img {
+          right: 0;
+          left: auto;
+        }
+      }
+    }
+    &__right {
+      display: none;
+    }
+    &__img {
+      bottom: -280px;
+      left: -10px;
+      z-index: -1;
+    }
+  }
+  .footer {
+    &__flex {
+      flex-wrap: wrap;
+    }
+    &__left {
+      width: 100%;
+      padding-left: 0;
+      text-align: center;
+    }
+    &__text {
+      width: 306px;
+      margin: 0 auto;
+      p {
+        max-width: inherit;
+      }
+    }
+    &__social {
+      justify-content: center;
+      padding-bottom: 35px;
+    }
+    &__right {
+      width: 100%;
+      .footer-section {
+        flex-wrap: wrap;
+        padding-bottom: 29px;
+        &__left {
+          margin-left: 18px;
+          padding-left: 0;
+        }
+        &__right {
+          margin-left: 18px;
+        }
+        .footer-section-block {
+          &__left {
+            nav {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
     }
   }
 }
