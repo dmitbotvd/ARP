@@ -6,11 +6,6 @@ $(document).ready(function(){
     slidesToScroll: 3,
   });
   $('.single-item').slick({
-    dots: true,
-    arrows: true,
-    centerPadding: "0px",
-    dots: true,
-    slidesToShow: 1,
-    infinite: false
+    dots: true
   });
 });
