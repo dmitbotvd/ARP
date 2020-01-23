@@ -1245,6 +1245,22 @@ button.slick-arrow {
     }
   }
   .last-news {
+    &__button {
+      margin-top: 60px;
+    }
+    .slick-next {
+      /* right: -228px; */
+      right: 45px;
+      bottom: -26px;
+      transform: rotate(180deg);
+    }
+    .slick-prev {
+      left: 45px;
+      bottom: -56px;
+    }
+    .slick-prev, .slick-next {
+      top: auto;
+    }
     &__flex {
       flex-wrap: wrap;
     }
@@ -1272,6 +1288,7 @@ button.slick-arrow {
       a {
         text-align: end;
         padding-right: 43px;
+        margin-bottom: 20px;
         img {
           right: 0;
           left: auto;
