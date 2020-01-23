@@ -697,6 +697,21 @@ button.slick-arrow {
         width: 1280px;
         margin: 0 auto;
       }
+    .slick-next {
+      bottom: -25px;
+      transform: rotate(180deg);
+      right: 45%;
+      }
+    .slick-prev {
+      bottom: -55px;
+      left: 45%;
+      }
+    .slick-prev, .slick-next {
+      top: auto;
+      }
+    &__button {
+      margin-top: 60px;
+    }
     }
   .footer {
     &__left {
@@ -729,6 +744,37 @@ button.slick-arrow {
       &__button {
         display: none;
       }
+    }
+  }
+  .last-photo {
+    .slick-next {
+      bottom: -25px;
+      transform: rotate(180deg);
+      right: 40%;
+    }
+    .slick-prev {
+      bottom: -55px;
+      left: 40%;
+    }
+    .slick-prev, .slick-next {
+      top: auto;
+    }
+  }
+  .last-news {
+    .slick-next {
+      bottom: -25px;
+      transform: rotate(180deg);
+      right: 40%;
+    }
+    .slick-prev {
+      bottom: -55px;
+      left: 40%;
+    }
+    .slick-prev, .slick-next {
+      top: auto;
+    }
+    &__button {
+      margin-top: 60px;
     }
   }
   .footer {
@@ -946,7 +992,16 @@ button.slick-arrow {
       }
     }
     .slick-prev {
-      
+      left: 230px;
+      bottom: -55px;
+    }
+    .slick-next {
+      right: 230px;
+      bottom: -25px;
+      transform: rotate(180deg);
+    }
+    .slick-prev, .slick-next {
+      top: auto;
     }
     &__button {
       margin-top: 60px;
