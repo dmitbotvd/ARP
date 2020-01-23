@@ -247,8 +247,23 @@ html, body {
     font-family: @font-family-m;
   }
 }
+
 .last-photo {
   margin-top: 55px;
+  &__slider {
+    .slick-next {
+      right: 235px;
+      top: 156px;
+      transform: rotate(-180deg);
+    }
+    .slick-prev {
+      left: 235px;
+      top: 187px;
+    }
+    .slick-list {
+      z-index: 1;
+    }
+  }
   .section-text-inner {
     padding-bottom: 20px;
   }
@@ -427,6 +442,7 @@ html, body {
     margin-top: 40px;
     position: relative;
   }
+  //.slick-new
   &__linear {
     position: absolute;
     width: 115px;
@@ -650,6 +666,13 @@ html, body {
     content: '';
     display: flex;
   }
+}
+/*slick
+button.slick-arrow {
+  background-color: @green;
+}
+.slick-dots {
+
 }
 /*adaptive*/
 @media (min-width: 1440px) and (max-width: 2560px) {
@@ -1563,6 +1586,22 @@ html, body {
     }
   }
   .last-news {
+    &__button {
+      margin-top: 60px;
+    }
+    .slick-next {
+      /* right: -228px; */
+      right: 45px;
+      bottom: -26px;
+      transform: rotate(180deg);
+    }
+    .slick-prev {
+      left: 45px;
+      bottom: -56px;
+    }
+    .slick-prev, .slick-next {
+      top: auto;
+    }
     &__flex {
       flex-wrap: wrap;
     }
@@ -1590,6 +1629,7 @@ html, body {
       a {
         text-align: end;
         padding-right: 43px;
+        margin-bottom: 20px;
         img {
           right: 0;
           left: auto;
@@ -1603,6 +1643,9 @@ html, body {
       bottom: -280px;
       left: -55px;
       z-index: -1;
+      img {
+        width: 125px;
+      }
     }
   }
   .footer {
