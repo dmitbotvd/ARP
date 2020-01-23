@@ -1,0 +1,49 @@
+@green: #86BC42;
+@ct-nb: #6E788D;
+@16: 16px;
+.section-radio {
+  display: flex;
+}
+.form_radio {
+	margin-bottom: 10px;
+}
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 20px;
+	margin-right: 0;
+	line-height: 18px;
+  user-select: none;
+  padding-right: 10px;
+  color: @ct-nb;
+}
+.form_radio label:before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 4px;
+  border: 1px solid @green;
+  border-radius: 50%;
+}
+ 
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+  background: url('../img/ellipse.svg') center no-repeat;
+}
+ 
+/* Hover */
+.form_radio label:hover:before {
+	filter: brightness(120%);
+}
+ 
+/* Disabled */
+.form_radio input[type=radio]:disabled + label:before {
+	filter: grayscale(100%);
+}
